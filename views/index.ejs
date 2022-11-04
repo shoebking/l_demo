@@ -6,17 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
-    <%- include('header.ejs') %>
-    <table>
-        <% for(var i=0;i<alltodos.length;i++){%>
-        <tr>
-            <td>
-                <%=alltodos[i].title%>
-            </td>
-        </tr>
-        <%}%>
-    </table>
+    <%- include("header.ejs") %>
+    <br />
+    <%- include("todos.ejs") %> <%- include("footer.ejs") %>
 </body>
 </html>
